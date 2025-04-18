@@ -3,8 +3,7 @@
     "name": "startbootstrap-personal",
     "version": "1.0.1",
     "scripts": {
-        "build": "npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets"
-,
+        "build": "npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
@@ -37,7 +36,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-personal.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "nodemailer": "^6.10.1"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",

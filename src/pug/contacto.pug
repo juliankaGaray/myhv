@@ -20,7 +20,7 @@ html(lang='en')
         main.flex-shrink-0
 
             // Navigation
-            include includes/navbar.pug
+            include includes/navbar2.pug
 
             // Page content
             section.py-5
@@ -32,45 +32,37 @@ html(lang='en')
                         .text-center.mb-5
                             .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
                                 i.bi.bi-envelope
-                            h1.fw-bolder Ponte en contacto
+                            h1.fw-bolder Ponte en contacto 
                             p.lead.fw-normal.text-muted.mb-0 ¡Trabajemos juntos!
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
-                                // * * * * * * * * * * * * * * *
-                                // * * SB Forms Contact Form * *
-                                // * * * * * * * * * * * * * * *
-
-                                // This form is pre-integrated with SB Forms.
-                                // To make this form functional, sign up at
-                                // https://startbootstrap.com/solution/contact-forms
-                                // to get an API token!
-
+                               
                                 form#contactForm(data-sb-form-api-token='API_TOKEN')
 
                                     // Name input
                                     .form-floating.mb-3
                                         input#name.form-control(
                                             type='text',
-                                            placeholder='Enter your name...'
+                                            placeholder='Escribe tu nombre...'
                                             data-sb-validations='required'
                                         )
                                         label(for='name') Nombre completo
                                         .invalid-feedback(data-sb-feedback='name:required')
-                                            | Un nombre es requerido
+                                            | Ingresa un nombre por favor.
                                     
                                     // Email address input
                                     .form-floating.mb-3
                                         input#email.form-control(
                                             type='email',
-                                            placeholder='name@example.com'
+                                            placeholder='name@ejemplo.com'
                                             data-sb-validations='required,email'
                                         )
-                                        label(for='email') Correo electrónico
+                                        label(for='email') Email 
                                         .invalid-feedback(data-sb-feedback='email:required')
-                                            | un correo es requerido
+                                            | An email is required.
                                         .invalid-feedback(data-sb-feedback='email:email')
-                                            | Email No es valido
+                                            | Email  No valido.
                                     
                                     // Phone number input
                                     .form-floating.mb-3
@@ -79,21 +71,21 @@ html(lang='en')
                                             placeholder='(123) 456-7890'
                                             data-sb-validations='required'
                                         )
-                                        label(for='phone') Número de teléfono
+                                        label(for='phone') Nùmero de contacto 
                                         .invalid-feedback(data-sb-feedback='phone:required')
-                                            | un número de teléfono es requerido
+                                            | ingresa un nùmero de contacto 
                                     
                                     // Message input
                                     .form-floating.mb-3
                                         textarea#message.form-control(
                                             type='text',
-                                            placeholder='Enter your message here...',
+                                            placeholder='Escribe aquì tu mensaje..',
                                             style='height: 10rem;'
                                             data-sb-validations='required'
                                         )
                                         label(for='message') Mensaje
                                         .invalid-feedback(data-sb-feedback='message:required')
-                                            | Un mensaje es requerido
+                                            |Escribe un mensaje.
 
                                     // Submit success message
                                     //
@@ -101,15 +93,17 @@ html(lang='en')
                                     // has successfully submitted
                                     #submitSuccessMessage.d-none
                                         .text-center.mb-3
-                                            .fw-bolder Envío de formulario exitoso
-                                            | Para activar este formulario, regístrate en
+                                            .fw-bolder ¡Envío del formulario exitoso!
+                                            | Para activar este formulario, ingresa en https://forms.gle/krwcVG8vDoj7DwA88
+                                            
+                                            br
                                             
                                     // Submit error message
                                     //
                                     // This is what your users will see when there is
                                     // an error submitting the form
                                     #submitErrorMessage.d-none
-                                        .text-center.text-danger.mb-3 ¡Error al enviar el mensaje!
+                                        .text-center.text-danger.mb-3 Error en el envio del mensaje!
 
                                     // Submit Button
                                     .d-grid
