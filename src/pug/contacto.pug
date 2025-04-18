@@ -32,8 +32,8 @@ html(lang='en')
                         .text-center.mb-5
                             .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
                                 i.bi.bi-envelope
-                            h1.fw-bolder Get in touch
-                            p.lead.fw-normal.text-muted.mb-0 Let's work together!
+                            h1.fw-bolder Ponte en contacto
+                            p.lead.fw-normal.text-muted.mb-0 ¡Trabajemos juntos!
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
@@ -55,9 +55,9 @@ html(lang='en')
                                             placeholder='Enter your name...'
                                             data-sb-validations='required'
                                         )
-                                        label(for='name') Full name
+                                        label(for='name') Nombre completo
                                         .invalid-feedback(data-sb-feedback='name:required')
-                                            | A name is required.
+                                            | Un nombre es requerido
                                     
                                     // Email address input
                                     .form-floating.mb-3
@@ -66,11 +66,11 @@ html(lang='en')
                                             placeholder='name@example.com'
                                             data-sb-validations='required,email'
                                         )
-                                        label(for='email') Email address
+                                        label(for='email') Correo electrónico
                                         .invalid-feedback(data-sb-feedback='email:required')
-                                            | An email is required.
+                                            | un correo es requerido
                                         .invalid-feedback(data-sb-feedback='email:email')
-                                            | Email is not valid.
+                                            | Email No es valido
                                     
                                     // Phone number input
                                     .form-floating.mb-3
@@ -79,9 +79,9 @@ html(lang='en')
                                             placeholder='(123) 456-7890'
                                             data-sb-validations='required'
                                         )
-                                        label(for='phone') Phone number
+                                        label(for='phone') Número de teléfono
                                         .invalid-feedback(data-sb-feedback='phone:required')
-                                            | A phone number is required.
+                                            | un número de teléfono es requerido
                                     
                                     // Message input
                                     .form-floating.mb-3
@@ -91,9 +91,9 @@ html(lang='en')
                                             style='height: 10rem;'
                                             data-sb-validations='required'
                                         )
-                                        label(for='message') Message
+                                        label(for='message') Mensaje
                                         .invalid-feedback(data-sb-feedback='message:required')
-                                            | A message is required.
+                                            | Un mensaje es requerido
 
                                     // Submit success message
                                     //
@@ -101,20 +101,19 @@ html(lang='en')
                                     // has successfully submitted
                                     #submitSuccessMessage.d-none
                                         .text-center.mb-3
-                                            .fw-bolder Form submission successful!
-                                            | To activate this form, sign up at
-                                            br
+                                            .fw-bolder Envío de formulario exitoso
+                                            | Para activar este formulario, regístrate en
                                             
                                     // Submit error message
                                     //
                                     // This is what your users will see when there is
                                     // an error submitting the form
                                     #submitErrorMessage.d-none
-                                        .text-center.text-danger.mb-3 Error sending message!
+                                        .text-center.text-danger.mb-3 ¡Error al enviar el mensaje!
 
                                     // Submit Button
                                     .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Enviar
 
         // Footer
         include includes/footer.pug
